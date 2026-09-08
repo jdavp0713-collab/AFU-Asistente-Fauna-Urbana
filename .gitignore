@@ -1,0 +1,62 @@
+# ============================================================
+# PYTHON
+# ============================================================
+
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Entornos virtuales
+entorno/
+venv/
+.venv/
+
+# ============================================================
+# FRONTEND / NODE
+# ============================================================
+
+node_modules/
+dist/
+
+# ============================================================
+# VARIABLES PRIVADAS
+# ============================================================
+
+.env
+.env.*
+!.env.example
+
+# ============================================================
+# ARCHIVOS TEMPORALES DE AFU
+# ============================================================
+
+uploads/
+
+*.log
+
+# ============================================================
+# JUPYTER
+# ============================================================
+
+.ipynb_checkpoints/
+
+# ============================================================
+# VS CODE / SISTEMA
+# ============================================================
+
+.vscode/
+
+.DS_Store
+Thumbs.db
+
+# ============================================================
+# CHECKPOINTS DEL ENTRENAMIENTO CONVERSACIONAL
+# ============================================================
+
+Backend/models/modelo_afu_v4_lora/checkpoint-*/
+
+# Estados de entrenamiento que no se necesitan para inferencia
+Backend/models/modelo_afu_v4_lora/**/optimizer.pt
+Backend/models/modelo_afu_v4_lora/**/rng_state.pth
+Backend/models/modelo_afu_v4_lora/**/scheduler.pt
+Backend/models/modelo_afu_v4_lora/**/trainer_state.json
