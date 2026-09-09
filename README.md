@@ -42,3 +42,8 @@ fotografías y permitir consultas en lenguaje natural sobre el animal identifica
 cd Backend
 pip install -r requirements.txt
 python app.py
+
+Frontend
+cd Frontend
+npm install
+npm run dev
